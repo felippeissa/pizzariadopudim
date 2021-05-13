@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <category>
+    <pattern>*</pattern>
+    <template>Ainda não tenho resposta para isso.</template>
+  </category>
+  
+  <category>
+        <pattern>OLÁ</pattern>
+        <template><b>Olá</b>Tudo bem? Seja bem vindo a Pizzaria do Pudim, para iniciarmos o atendimento, me informe seu nome por favor</template>
+  </category>
+       
+    <category>
+        <pattern>OI</pattern>
+        <template><b>Oi</b>Tudo bem? Seja bem vindo a Pizzaria do Pudim, para iniciarmos o atendimento, me informe seu nome por favor</template>
+    </category>
+
+    <category>
+        <pattern>GOSTARIA DE PEDIR UMA PIZZA</pattern>
+        <template><b>Olá</b>Tudo bem? Seja bem vindo a Pizzaria do Pudim, para iniciarmos o atendimento, me informe seu nome por favor</template>
+    </category>
+    
+    <category>
+        <pattern>MEU NOME É *</pattern>
+        <template>Certo, <set name="nome"><star/></set>, gostaria de uma pizza vegetariana ou não-vegetariana?
+            <reply>
+                <text>Vegetariana.</text>
+                <postback>VEG</postback>
+            </reply>
+            <reply>
+                <text>Não-vegetariana</text>
+                <postback>NOVEG</postback>
+            </reply>
+        </template>    
+    </category>
+    
+    <category>
+        <pattern>ME CHAMO *</pattern>
+        <template>Certo, <set name="nome"><star/></set>, gostaria de uma pizza vegetariana ou não-vegetariana?
+            <reply>
+                <text>Vegetariana.</text>
+                <postback>VEG</postback>
+            </reply>
+            <reply>
+                <text>Não-vegetariana</text>
+                <postback>NOVEG</postback>
+            </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>VEG</pattern>
+        <template>Escolha o sabor:
+            <reply>
+                <text>Marguerita</text>
+                <postback>MARGUERITA</postback>
+            </reply>
+            <reply>
+                <text>Palmito</text>
+                <postback>PALMITO</postback>
+            </reply>
+            <reply>
+                <text>Milho Verde</text>
+                <postback>MILHOVERDE</postback>
+            </reply>
+            <reply>
+                <text>Mussarela</text>
+                <postback>MUSSARELA</postback>
+            </reply>
+
+
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NOVEG</pattern>
+        <template>Escolha o sabor:
+            <reply>
+                <text>Calabresa</text>
+                <postback>CALABRESA</postback>
+            </reply>
+            <reply>
+                <text>Frango com Catupiry</text>
+                <postback>FRANGOCAT</postback>
+            </reply>
+            <reply>
+                <text>Napolitana</text>
+                <postback>NAPOLITANA</postback>
+            </reply>
+            <reply>
+                <text>Portuguesa</text>
+                <postback>PORTUGUESA</postback>
+            </reply>
+        </template>
+    </category>
+
+
+
+
+    <category>
+        <pattern>MARGUERITA</pattern>
+        <template>Qual tamanho desejado?
+            <reply>
+                <text>Pequena</text>
+                <postback>PEQUENA</postback>
+            </reply>
+            <reply>
+                <text>Grande</text>
+                <postback>GRANDE</postback>
+            </reply>
+        </template>
+    </category>
+
+    <category>
+        <pattern>PALMITO</pattern>
+        <template>Qual tamanho desejado?
+            <reply>
+                <text>Pequena</text>
+                <postback>PEQUENA</postback>
+            </reply>
+            <reply>
+                <text>Grande</text>
+                <postback>GRANDE</postback>
+            </reply>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MILHOVERDE</pattern>
+        <template>Qual tamanho desejado?
+            <reply>
+                <text>Pequena</text>
+                <postback>PEQUENA</postback>
+            </reply>
+            <reply>
+                <text>Grande</text>
+                <postback>GRANDE</postback>
+            </reply>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MUSSARELA</pattern>
+        <template>Qual tamanho desejado?
+            <reply>
+                <text>Pequena</text>
+                <postback>PEQUENA</postback>
+            </reply>
+            <reply>
+                <text>Grande</text>
+                <postback>GRANDE</postback>
+            </reply>
+        </template>
+    </category>
+
+    <category>
+        <pattern>CALABRESA</pattern>
+        <template>Qual tamanho desejado?
+            <reply>
+                <text>Pequena</text>
+                <postback>PEQUENA</postback>
+            </reply>
+            <reply>
+                <text>Grande</text>
+                <postback>GRANDE</postback>
+            </reply>
+        </template>
+    </category>
+
+    <category>
+        <pattern>FRANGOCAT</pattern>
+        <template>Qual tamanho desejado?
+            <reply>
+                <text>Pequena</text>
+                <postback>PEQUENA</postback>
+            </reply>
+            <reply>
+                <text>Grande</text>
+                <postback>GRANDE</postback>
+            </reply>
+        </template>
+    </category>
+
+    <category>
+        <pattern>NAPOLITANA</pattern>
+        <template>Qual tamanho desejado?
+            <reply>
+                <text>Pequena</text>
+                <postback>PEQUENA</postback>
+            </reply>
+            <reply>
+                <text>Grande</text>
+                <postback>GRANDE</postback>
+            </reply>
+        </template>
+    </category>
+
+    <category>
+        <pattern>PORTUGUESA</pattern>
+        <template>Qual tamanho desejado?
+            <reply>
+                <text>Pequena</text>
+                <postback>PEQUENA</postback>
+            </reply>
+            <reply>
+                <text>Grande</text>
+                <postback>GRANDE</postback>
+            </reply>
+        </template>
+    </category>
+
+
+
+    <category>
+        <pattern>PEQUENA</pattern>
+        <template>Gostaria de pedir outra pizza?
+            <reply>
+                <text>Sim!</text>
+                <postback>PEDIROUTRA</postback>
+            </reply>
+            <reply>
+                <text>Não.</text>
+                <postback>ESCOLHANÃO</postback>
+            </reply>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GRANDE</pattern>
+        <template>Gostaria de pedir outra pizza?
+            <reply>
+                <text>Sim!</text>
+                <postback>PEDIROUTRA</postback>
+            </reply>
+            <reply>
+                <text>Não.</text>
+                <postback>ESCOLHANÃO</postback>
+            </reply>
+        </template>
+    </category>
+
+    <category>
+        <pattern>PEDIROUTRA</pattern>
+        <template>Vegetariana ou não-vegetariana?
+            <reply>
+                <text>Vegetariana.</text>
+                <postback>VEG</postback>
+            </reply>
+            <reply>
+                <text>Não-vegetariana</text>
+                <postback>NOVEG</postback>
+            </reply>
+        </template>
+    </category>
+
+    <category> 
+        <pattern>ESCOLHANÃO</pattern>
+        <template>Gostaria de pedir alguma bebida?
+            <reply>
+                <text>Sim!</text>
+                <postback>BEBIBASIM</postback>
+            </reply>
+            <reply>
+                <text>Não.</text>
+                <postback>BEBIBANÃO</postback>
+            </reply>
+        </template>
+    </category>
+
+    <category>
+        <pattern>BEBIBASIM</pattern>
+        <template>Escolha a bebida:
+            <reply>
+                <text>Guaraná</text>
+                <postback>GUARANA</postback>
+            </reply>
+            <reply>
+                <text>Coca-Cola</text>
+                <postback>COCACOLA</postback>
+            </reply>
+            <reply>
+                <text>Soda</text>
+                <postback>SODA</postback>
+            </reply>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GUARANA</pattern>
+        <template>
+            <reply>
+                <text>2 litros</text>
+                <postback>2LITROS</postback>
+            </reply>
+            <reply>
+                <text>Lata</text>
+                <postback>LATA</postback>
+            </reply>
+        </template>
+    </category>
+
+    <category>
+        <pattern>COCACOLA</pattern>
+        <template>
+            <reply>
+                <text>2 litros</text>
+                <postback>2LITROS</postback>
+            </reply>
+            <reply>
+                <text>Lata</text>
+                <postback>LATA</postback>
+            </reply>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SODA</pattern>
+        <template>
+            <reply>
+                <text>2 litros</text>
+                <postback>2LITROS</postback>
+            </reply>
+            <reply>
+                <text>Lata</text>
+                <postback>LATA</postback>
+            </reply>
+        </template>
+    </category>
+
+    <category>
+        <pattern>2LITROS</pattern>
+        <template>Gostaria de quantas unidades desse refrigerante?</template>
+    </category>
+
+    <category>
+        <pattern>LATA</pattern>
+        <template>Gostaria de quantas unidades desse refrigerante?</template>
+    </category>
+
+    <category>
+        <pattern>* UNIDADES</pattern>
+        <template><get name="nome"/>, anotei seu pedido, agora preciso saber se o pedido será retirado na pizzaria ou se é para entrega.
+        <reply>
+            <text>Retirada</text>
+            <postback>RETIRADA</postback>
+        </reply>
+        <reply>
+            <text>Entrega</text>
+            <postback>ENTREGA</postback>
+        </reply>
+    </template>
+    </category>
+
+    <category>
+        <pattern>* UNIDADE</pattern>
+        <template><get name="nome"/>, anotei seu pedido, agora preciso saber se o pedido será retirado na pizzaria ou se é para entrega.
+        <reply>
+            <text>Retirada</text>
+            <postback>RETIRADA</postback>
+        </reply>
+        <reply>
+            <text>Entrega</text>
+            <postback>ENTREGA</postback>
+        </reply>
+    </template>
+    </category>
+
+    <category>
+       <pattern>BEBIBANÃO</pattern>
+       <template><get name="nome"/>, anotei seu pedido, agora preciso saber se o pedido será retirado na pizzaria ou se é para entrega.
+        <reply>
+            <text>Retirada</text>
+            <postback>RETIRADA</postback>
+        </reply>
+        <reply>
+            <text>Entrega</text>
+            <postback>ENTREGA</postback>
+        </reply>
+    </template>
+
+    </category>
+
+
+    <category>
+        <pattern>RETIRADA</pattern>
+        <template>Ok, a previsão é que fique pronta em 40 minutos. Agradecemos a preferência.</template>
+    </category>
+
+    <category>
+        <pattern>ENTREGA</pattern>
+        <template>Me informe o seu endereço por gentileza.</template>
+    </category>
+
+    <category>
+        <pattern>RUA * QUADRA * LOTE * BAIRRO * </pattern>
+        <template>Anotado! a previsão de entrega é de 40 minutos. Agradecemos a preferência</template>
+    </category>
+
+    <category>
+        <pattern>RUA * CONDOMINIO * APARTAMENTO * BAIRRO * </pattern>
+        <template>Anotado! a previsão de entrega é de 40 minutos. Agradecemos a preferência</template>
+    </category>
+    
+</aiml>
